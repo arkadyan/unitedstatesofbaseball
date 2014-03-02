@@ -1,6 +1,10 @@
 <script type="text/x-handlebars" data-template-name="team">
   <h2>The {{name}} {{nickname}}</h2>
 
+  {{#if parkImage}}
+    <img {{bind-attr src=parkImage}} id="park-image">
+  {{/if}}
+
   <div class="players">
     <h3>Players:</h3><br>
     <dl>

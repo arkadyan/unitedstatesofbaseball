@@ -4,6 +4,7 @@ App.Team = DS.Model.extend({
   code: DS.attr('string'),
   name: DS.attr('string'),
   nickname: DS.attr('string'),
+  parkImage: DS.attr('string'),
   // players: DS.hasMany('player')
   players: DS.attr()
 });
@@ -13,7 +14,7 @@ App.Team.FIXTURES = [
   {map_id: 2, id: 'AK', name: 'Alaska', nickname: 'Willow Ptarmigans'},
   {map_id: 4, id: 'AZ', name: 'Arizona', nickname: 'Cactus Wrens'},
   {map_id: 5, id: 'AR', name: 'Arkansas', nickname: 'Mockingbirds'},
-  {map_id: 6, id: 'CA', name: 'California', nickname: 'Valley Quails', players: [
+  {map_id: 6, id: 'CA', name: 'California', nickname: 'Valley Quails', parkImage: '/images/parks/ca.png', players: [
     {name: 'Ernie Lombardi', position: 'C', team: 'CA', home: 'Oakland', born: '1908', ops: '.817'},
     {name: 'Mark McGwire', position: '1B', team: 'CA', home: 'Pomona', born: '1963', ops: '.982'},
     {name: 'Chase Utley', position: '2B', team: 'CA', home: 'Pasadena', born: '1978', ops: '.870'},
@@ -26,7 +27,7 @@ App.Team.FIXTURES = [
   {map_id: 8, id: 'CO', name: 'Colorado', nickname: 'Lark Buntings'},
   {map_id: 9, id: 'CT', name: 'Connecticut', nickname: 'Robins'},
   {map_id: 10, id: 'DE', name: 'Delaware', nickname: 'Blue Hen Chickens'},
-  {map_id: 12, id: 'FL', name: 'Florida', nickname: 'Mockingbirds', players: [
+  {map_id: 12, id: 'FL', name: 'Florida', nickname: 'Mockingbirds', parkImage: '/images/parks/fl.png', players: [
     {name: 'Mike Napoli', position: 'C', team: 'FL', home: 'Hollywood', born: '1981', ops: '.859'},
     {name: 'Fred McGriff', position: '1B', team: 'FL', home: 'Tampa', born: '1963', ops: '.886'},
     {name: 'Rickie Weeks', position: '2B', team: 'FL', home: 'Daytona Beach', born: '1982', ops: '.768'},
@@ -45,7 +46,7 @@ App.Team.FIXTURES = [
   {map_id: 20, id: 'KS', name: 'Kansas', nickname: 'Western Meadowlarks'},
   {map_id: 21, id: 'KY', name: 'Kentucky', nickname: 'Cardinals'},
   {map_id: 22, id: 'LA', name: 'Louisiana', nickname: 'Eastern Brown Pelicans'},
-  {map_id: 23, id: 'ME', name: 'Maine', nickname: 'Chickadees', players: [{name: 'Clyde Sukeforth', position: 'C', team: 'ME', home: 'Washington', born: '1901', ops: '.644'}, {name: 'Del Bissonette', position: '1B', team: 'ME', home: 'Winthrop', born: '1899', ops: '.852'},{name: 'Ryan Flaherty', position: '2B', team: 'ME', home: 'Portland', born: '1986', ops: '.655'},{name: 'Harry Lord', position: '3B', team: 'ME', home: 'Porter', born: '1882', ops: '.669'},{name: 'Ben Nickerson', position: 'SS', team: 'ME', home: 'Boothbay', born: '1986', ops: '.835'},{name: 'George Gore', position: 'LF', team: 'ME', home: 'Saccarappa', born: '1857', ops: '.797'},{name: 'Walter Thornton', position: 'CF', team: 'ME', home: 'Lewiston', born: '1875', ops: '.767'},{name: 'Chief Sockalexis', position: 'RF', team: 'ME', home: 'Old Town', born: '1871', ops: '.766'}]},
+  {map_id: 23, id: 'ME', name: 'Maine', nickname: 'Chickadees', parkImage: '/images/parks/me.png', players: [{name: 'Clyde Sukeforth', position: 'C', team: 'ME', home: 'Washington', born: '1901', ops: '.644'}, {name: 'Del Bissonette', position: '1B', team: 'ME', home: 'Winthrop', born: '1899', ops: '.852'},{name: 'Ryan Flaherty', position: '2B', team: 'ME', home: 'Portland', born: '1986', ops: '.655'},{name: 'Harry Lord', position: '3B', team: 'ME', home: 'Porter', born: '1882', ops: '.669'},{name: 'Ben Nickerson', position: 'SS', team: 'ME', home: 'Boothbay', born: '1986', ops: '.835'},{name: 'George Gore', position: 'LF', team: 'ME', home: 'Saccarappa', born: '1857', ops: '.797'},{name: 'Walter Thornton', position: 'CF', team: 'ME', home: 'Lewiston', born: '1875', ops: '.767'},{name: 'Chief Sockalexis', position: 'RF', team: 'ME', home: 'Old Town', born: '1871', ops: '.766'}]},
   {map_id: 24, id: 'MD', name: 'Maryland', nickname: 'Baltimore Orioles'},
   {map_id: 25, id: 'MA', name: 'Massachusetts', nickname: 'Chickadees', players: [{name: 'Mickey Cochrane', position: 'C', team: 'MA', home: 'Bridgewater', born: '1903', ops: '.887'}, {name: 'Jeff Bagwell', position: '1B', team: 'MA', home: 'Boston', born: '1968', ops: '.948'},{name: 'Mark Bellhorn', position: '2B', team: 'MA', home: 'Boston', born: '1974', ops: '.734'},{name: 'Richie Hebner', position: '3B', team: 'MA', home: 'Boston', born: '1947', ops: '.788'},{name: 'Joe Sullivan', position: 'SS', team: 'MA', home: 'Charlestown', born: '1870', ops: '.740'},{name: 'Joe Kelley', position: 'LF', team: 'MA', home: 'Cambridge', born: '1871', ops: '.847'},{name: 'Jimmy Bannon', position: 'CF', team: 'MA', home: 'Amesbury', born: '1871', ops: '.832'},{name: 'Jimmy Ryan', position: 'RF', team: 'MA', home: 'Clinton', born: '1863', ops: '.816'}]},
   {map_id: 26, id: 'MI', name: 'Michigan', nickname: 'Robins'},
@@ -58,7 +59,7 @@ App.Team.FIXTURES = [
   {map_id: 33, id: 'NH', name: 'New Hampshire', nickname: 'Purple Finchs'},
   {map_id: 34, id: 'NJ', name: 'New Jersey', nickname: 'Eastern Goldfinchs'},
   {map_id: 35, id: 'NM', name: 'New Mexico', nickname: 'Roadrunners'},
-  {map_id: 36, id: 'NY', name: 'New York', nickname: 'Bluebirds', players: [
+  {map_id: 36, id: 'NY', name: 'New York', nickname: 'Bluebirds', parkImage: '/images/parks/ny.png', players: [
     {name: 'Joe Torre', position: 'C', team: 'NY', home: 'Brooklyn', born: '1940', ops: '.816'},
     {name: 'Lou Gehrig', position: '1B', team: 'NY', home: 'New York', born: '1903', ops: '1.075'},
     {name: 'Ross Barnes', position: '2B', team: 'NY', home: 'Mount Morris', born: '1850', ops: '.852'},
@@ -78,7 +79,7 @@ App.Team.FIXTURES = [
   {map_id: 45, id: 'SC', name: 'South Carolina', nickname: 'Great Carolina Wrens'},
   {map_id: 46, id: 'SD', name: 'South Dakota', nickname: 'Ring-necked Pheasants'},
   {map_id: 47, id: 'TN', name: 'Tennessee', nickname: 'Mockingbirds'},
-  {map_id: 48, id: 'TX', name: 'Texas', nickname: 'Mockingbirds', players: [
+  {map_id: 48, id: 'TX', name: 'Texas', nickname: 'Mockingbirds', parkImage: '/images/parks/tex.png', players: [
     {name: 'Eddie Taubensee', position: 'C', team: 'TX', home: 'Beeville', born: '1968', ops: '.760'},
     {name: 'Norm Cash', position: '1B', team: 'TX', home: 'Justiceburg', born: '1934', ops: '.862'},
     {name: 'Rogers Hornsby', position: '2B', team: 'TX', home: 'Winters', born: '1896', ops: '1.000'},
