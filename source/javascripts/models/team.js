@@ -36,7 +36,7 @@ App.Team.FIXTURES = [
   {map_id: 20, id: 'KS', name: 'Kansas', nickname: 'Western Meadowlarks'},
   {map_id: 21, id: 'KY', name: 'Kentucky', nickname: 'Cardinals'},
   {map_id: 22, id: 'LA', name: 'Louisiana', nickname: 'Eastern Brown Pelicans'},
-  {map_id: 23, id: 'ME', name: 'Maine', nickname: 'Chickadees', players: [{name: 'John Doe', position: '1B', team: 'ME'}, {name: 'John Lacky', position: '2B', team: 'ME'}]},
+  {map_id: 23, id: 'ME', name: 'Maine', nickname: 'Chickadees', players: [{name: 'Clyde Sukeforth', position: 'C', team: 'ME', home: 'Washington', born: '1901', ops: '.644'}, {name: 'Del Bissonette', position: '1B', team: 'ME', home: 'Winthrop', born: '1899', ops: '.852'},{name: 'Ryan Flaherty', position: '2B', team: 'ME', home: 'Portland', born: '1986', ops: '.655'},{name: 'Harry Lord', position: '3B', team: 'ME', home: 'Porter', born: '1882', ops: '.669'},{name: 'Ben Nickerson', position: 'SS', team: 'ME', home: 'Boothbay', born: '1986', ops: '.835'},{name: 'George Gore', position: 'LF', team: 'ME', home: 'Saccarappa', born: '1857', ops: '.797'},{name: 'Walter Thorton', position: 'CF', team: 'ME', home: 'Lewiston', born: '1875', ops: '.767'},{name: 'Chief Sockalexis', position: 'RF', team: 'ME', home: 'Old Town', born: '1871', ops: '.766'},]},
   {map_id: 24, id: 'MD', name: 'Maryland', nickname: 'Baltimore Orioles'},
   {map_id: 25, id: 'MA', name: 'Massachusetts', nickname: 'Chickadees'},
   {map_id: 26, id: 'MI', name: 'Michigan', nickname: 'Robins'},
