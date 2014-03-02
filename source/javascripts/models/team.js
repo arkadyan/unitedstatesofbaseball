@@ -26,7 +26,16 @@ App.Team.FIXTURES = [
   {map_id: 8, id: 'CO', name: 'Colorado', nickname: 'Lark Buntings'},
   {map_id: 9, id: 'CT', name: 'Connecticut', nickname: 'Robins'},
   {map_id: 10, id: 'DE', name: 'Delaware', nickname: 'Blue Hen Chickens'},
-  {map_id: 12, id: 'FL', name: 'Florida', nickname: 'Mockingbirds'},
+  {map_id: 12, id: 'FL', name: 'Florida', nickname: 'Mockingbirds', players: [
+    {name: 'Mike Napoli', position: 'C', team: 'FL', home: 'Hollywood', born: '1981', ops: '.859'},
+    {name: 'Fred McGriff', position: '1B', team: 'FL', home: 'Tampa', born: '1963', ops: '.886'},
+    {name: 'Rickie Weeks', position: '2B', team: 'FL', home: 'Daytona Beach', born: '1982', ops: '.768'},
+    {name: 'Chipper Jones', position: '3B', team: 'FL', home: 'DeLand', born: '1972', ops: '.930'},
+    {name: 'Jay Bell', position: 'SS', team: 'FL', home: 'Eglin A.F.B.', born: '1965', ops: '.753'},
+    {name: 'Gary Sheffield', position: 'LF', team: 'FL', home: 'Tampa', born: '1968', ops: '.907'},
+    {name: 'Andrew McCutchen', position: 'CF', team: 'FL', home: 'Fort Meade', born: '1986', ops: '.1986'},
+    {name: 'Luis Gonzalez', position: 'RF', team: 'FL', home: 'Tampa', born: '1967', ops: '.845'}
+  ]},
   {map_id: 13, id: 'GA', name: 'Georgia', nickname: 'Brown Thrashers'},
   {map_id: 15, id: 'HI', name: 'Hawaii', nickname: 'Nenes'},
   {map_id: 16, id: 'ID', name: 'Idaho', nickname: 'Mountain Bluebirds'},
