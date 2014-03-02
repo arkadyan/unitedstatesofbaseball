@@ -9,8 +9,6 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The United States of Baseball" %></title>
 
-    <%= stylesheet_link_tag "all" %>
-
     <!-- jQuery -->
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 
@@ -25,6 +23,8 @@
     <!-- d3 -->
     <script src="http://d3js.org/d3.v3.min.js"></script>
     <script src="http://d3js.org/topojson.v1.min.js"></script>
+
+    <%= stylesheet_link_tag "all" %>
 
     <%= javascript_include_tag  "vendor/handlebars-v1.3.0" %>
     <%= javascript_include_tag  "vendor/ember-1.4.0" %>
