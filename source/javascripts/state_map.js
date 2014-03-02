@@ -7,7 +7,7 @@ var StateMap = {
     var width = $(container).width(),
         height = $(container).height(),
         centered;
-    console.log('width from d3 = ' + d3.select(container).style('width'));
+    // console.log('width from d3 = ' + d3.select(container).style('width'));
 
     var projection = d3.geo.albersUsa()
         .scale(800)
@@ -58,6 +58,8 @@ var StateMap = {
         k = 1;
         centered = null;
       }
+
+      $('#map_id').html(d.id);
 
       g.selectAll("path")
           .classed("active", centered && function(d) { return d === centered; });
