@@ -21,7 +21,7 @@ App.Team.FIXTURES = [
     {name: 'Nomar Garciaparra', position: 'SS', team: 'CA', home: 'Whittier', born: '1973', ops: '.8818'},
     {name: 'Ted Williams', position: 'LF', team: 'CA', home: 'San Diego', born: '1918', ops: '1.1153'},
     {name: 'Barry Bonds', position: 'CF', team: 'CA', home: 'Riverside', born: '1964', ops: '1.0510'},
-    {name: 'Joe DiMaggio', position: 'RF', team: 'CA', home: 'Martinez', born: '1914', ops: '.9764'},
+    {name: 'Joe DiMaggio', position: 'RF', team: 'CA', home: 'Martinez', born: '1914', ops: '.9764'}
   ]},
   {map_id: 8, id: 'CO', name: 'Colorado', nickname: 'Lark Buntings'},
   {map_id: 9, id: 'CT', name: 'Connecticut', nickname: 'Robins'},
@@ -36,7 +36,7 @@ App.Team.FIXTURES = [
     {name: 'Andrew McCutchen', position: 'CF', team: 'FL', home: 'Fort Meade', born: '1986', ops: '.869'},
     {name: 'Luis Gonzalez', position: 'RF', team: 'FL', home: 'Tampa', born: '1967', ops: '.845'}
   ]},
-  {map_id: 13, id: 'GA', name: 'Georgia', nickname: 'Brown Thrashers'},
+  {map_id: 13, id: 'GA', name: 'Georgia', nickname: 'Brown Thrashers', players: [{name: 'Buster Posey', position: 'C', team: 'GA', home: 'Leesburg', born: '1987', ops: '.864'}, {name: 'Johnny Mize', position: '1B', team: 'GA', home: 'Demorest', born: '1913', ops: '.958'},{name: 'Jackie Robinson', position: '2B', team: 'GA', home: 'Cairo', born: '1919', ops: '.875'},{name: 'Russel Branyon', position: '3B', team: 'GA', home: 'Warner Robins', born: '1975', ops: '.813'},{name: 'Cecil Travis', position: 'SS', team: 'GA', home: 'Riverdale', born: '1913', ops: '.782'},{name: 'Ty Cobb', position: 'LF', team: 'GA', home: 'Narrows', born: '1886', ops: '.935'},{name: 'Moises Alou', position: 'CF', team: 'GA', home: 'Atlanta', born: '1966', ops: '.887'},{name: 'JD Drew', position: 'RF', team: 'GA', home: 'Valdosta', born: '1975', ops: '.872'}]},
   {map_id: 15, id: 'HI', name: 'Hawaii', nickname: 'Nenes'},
   {map_id: 16, id: 'ID', name: 'Idaho', nickname: 'Mountain Bluebirds'},
   {map_id: 17, id: 'IL', name: 'Illinois', nickname: 'Cardinals'},
@@ -45,7 +45,7 @@ App.Team.FIXTURES = [
   {map_id: 20, id: 'KS', name: 'Kansas', nickname: 'Western Meadowlarks'},
   {map_id: 21, id: 'KY', name: 'Kentucky', nickname: 'Cardinals'},
   {map_id: 22, id: 'LA', name: 'Louisiana', nickname: 'Eastern Brown Pelicans'},
-  {map_id: 23, id: 'ME', name: 'Maine', nickname: 'Chickadees', players: [{name: 'Clyde Sukeforth', position: 'C', team: 'ME', home: 'Washington', born: '1901', ops: '.644'}, {name: 'Del Bissonette', position: '1B', team: 'ME', home: 'Winthrop', born: '1899', ops: '.852'},{name: 'Ryan Flaherty', position: '2B', team: 'ME', home: 'Portland', born: '1986', ops: '.655'},{name: 'Harry Lord', position: '3B', team: 'ME', home: 'Porter', born: '1882', ops: '.669'},{name: 'Ben Nickerson', position: 'SS', team: 'ME', home: 'Boothbay', born: '1986', ops: '.835'},{name: 'George Gore', position: 'LF', team: 'ME', home: 'Saccarappa', born: '1857', ops: '.797'},{name: 'Walter Thornton', position: 'CF', team: 'ME', home: 'Lewiston', born: '1875', ops: '.767'},{name: 'Chief Sockalexis', position: 'RF', team: 'ME', home: 'Old Town', born: '1871', ops: '.766'},]},
+  {map_id: 23, id: 'ME', name: 'Maine', nickname: 'Chickadees', players: [{name: 'Clyde Sukeforth', position: 'C', team: 'ME', home: 'Washington', born: '1901', ops: '.644'}, {name: 'Del Bissonette', position: '1B', team: 'ME', home: 'Winthrop', born: '1899', ops: '.852'},{name: 'Ryan Flaherty', position: '2B', team: 'ME', home: 'Portland', born: '1986', ops: '.655'},{name: 'Harry Lord', position: '3B', team: 'ME', home: 'Porter', born: '1882', ops: '.669'},{name: 'Ben Nickerson', position: 'SS', team: 'ME', home: 'Boothbay', born: '1986', ops: '.835'},{name: 'George Gore', position: 'LF', team: 'ME', home: 'Saccarappa', born: '1857', ops: '.797'},{name: 'Walter Thornton', position: 'CF', team: 'ME', home: 'Lewiston', born: '1875', ops: '.767'},{name: 'Chief Sockalexis', position: 'RF', team: 'ME', home: 'Old Town', born: '1871', ops: '.766'}]},
   {map_id: 24, id: 'MD', name: 'Maryland', nickname: 'Baltimore Orioles'},
   {map_id: 25, id: 'MA', name: 'Massachusetts', nickname: 'Chickadees'},
   {map_id: 26, id: 'MI', name: 'Michigan', nickname: 'Robins'},
@@ -86,7 +86,7 @@ App.Team.FIXTURES = [
     {name: 'Topper Rigney', position: 'SS', team: 'TX', home: 'Groveton', born: '1897', ops: '.7564'},
     {name: 'Lance Berkman', position: 'LF', team: 'TX', home: 'Waco', born: '1976', ops: '.9429'},
     {name: 'Frank Robinson', position: 'CF', team: 'TX', home: 'Beaumont', born: '1935', ops: '.9254'},
-    {name: 'Tris Speaker', position: 'RF', team: 'TX', home: 'Hubbard', born: '1888', ops: '.9173'},
+    {name: 'Tris Speaker', position: 'RF', team: 'TX', home: 'Hubbard', born: '1888', ops: '.9173'}
   ]},
   {map_id: 49, id: 'UT', name: 'Utah', nickname: 'Common American Gulls'},
   {map_id: 50, id: 'VT', name: 'Vermont', nickname: 'Hermit Thrushes'},
