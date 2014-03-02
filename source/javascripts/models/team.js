@@ -3,7 +3,9 @@
 App.Team = DS.Model.extend({
   code: DS.attr('string'),
   name: DS.attr('string'),
-  nickname: DS.attr('string')
+  nickname: DS.attr('string'),
+  // players: DS.hasMany('player')
+  players: DS.attr()
 });
 
 App.Team.FIXTURES = [
@@ -25,7 +27,7 @@ App.Team.FIXTURES = [
   {map_id: 20, id: 'KS', name: 'Kansas', nickname: 'Western Meadowlarks'},
   {map_id: 21, id: 'KY', name: 'Kentucky', nickname: 'Cardinals'},
   {map_id: 22, id: 'LA', name: 'Louisiana', nickname: 'Eastern Brown Pelicans'},
-  {map_id: 23, id: 'ME', name: 'Maine', nickname: 'Chickadees'},
+  {map_id: 23, id: 'ME', name: 'Maine', nickname: 'Chickadees', players: [{name: 'John Doe', position: '1B', team: 'ME'}, {name: 'John Lacky', position: '2B', team: 'ME'}]},
   {map_id: 24, id: 'MD', name: 'Maryland', nickname: 'Baltimore Orioles'},
   {map_id: 25, id: 'MA', name: 'Massachusetts', nickname: 'Chickadees'},
   {map_id: 26, id: 'MI', name: 'Michigan', nickname: 'Robins'},

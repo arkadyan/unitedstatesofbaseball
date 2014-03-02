@@ -1,3 +1,24 @@
 <script type="text/x-handlebars" data-template-name="team">
   <h2>The {{name}} {{nickname}}</h2>
+
+  <div class="players">
+    <h3>Players:</h3><br>
+    <dl>
+      {{#each player in players}}
+        <div class="player">
+          <dt>{{player.position}}</dt>)
+          <dd>
+            {{player.name}}
+          </dd>
+        </div>
+      {{/each}}
+    </dl>
+  </div>
+</script>
+
+<script type="text/x-handlebars" data-template-name="dump">
+{{#if hasPlayers}}
+{{else}}
+  <p>No team members found</p>
+{{/if}}
 </script>

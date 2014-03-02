@@ -1,13 +1,15 @@
 <script type="text/x-handlebars" data-template-name="teams">
   <div class="row">
+    <div class="col-md-2">
+      <h1 id="united_states_of_baseball">United States of Baseball</h1>
+    </div>
+
     <div class="col-md-6">
       <div id="map">
       </div>
     </div>
 
-    <div class="col-md-6">
-      <h1 id="united_states_of_baseball">United States of Baseball</h1>
-
+    <div id="team" class="col-md-4">
       {{outlet}}
     </div>
   </div>
@@ -16,7 +18,7 @@
 </script>
 
 <script type="text/x-handlebars" data-template-name="teams/index">
-  <p>
+  <p class="help">
     Select a state from the map
   </p>
 </script>
