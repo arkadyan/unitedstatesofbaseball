@@ -68,3 +68,12 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+
+# Deploy configuration
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  deploy.host = 'unitedstatesofbaseball.net'
+  deploy.user = 'arkadyan'
+  deploy.path = '/home/arkadyan/unitedstatesofbaseball.net'
+end
