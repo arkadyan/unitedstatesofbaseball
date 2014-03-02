@@ -35,7 +35,10 @@ h1 {
 
 .players {
   .player {
+    float: left;
+    margin-right: 2em;
     margin-bottom: 1em;
+    min-width: 11em;
   }
 
   dt, dd {
