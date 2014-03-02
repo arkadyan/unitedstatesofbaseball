@@ -12,7 +12,7 @@ App.Team = DS.Model.extend({
 App.Team.FIXTURES = [
   {map_id: 1, id: 'AL', name: 'Alabama', nickname: 'Yellowhammers'},
   {map_id: 2, id: 'AK', name: 'Alaska', nickname: 'Willow Ptarmigans'},
-  {map_id: 4, id: 'AZ', name: 'Arizona', nickname: 'Cactus Wrens'},
+  {map_id: 4, id: 'AZ', name: 'Arizona', nickname: 'Cactus Wrens', players: [{name: 'Doug Mirabelli', position: 'C', team: 'AZ', home: 'Kingman', born: '1970', ops: '.723'}, {name: 'Brian Banks', position: '1B', team: 'AZ', home: 'Mesa', born: '1970', ops: '.703'},{name: 'Ian Kinsler', position: '2B', team: 'AZ', home: 'Tucson', born: '1982', ops: '.802'},{name: 'Shea Hillenbrand', position: '3B', team: 'AZ', home: 'Mesa', born: '1975', ops: '.760'},{name: 'Solly Hemus', position: 'SS', team: 'AZ', home: 'Phoenix', born: '1923', ops: '.797'},{name: 'Andre Ethier', position: 'LF', team: 'AZ', home: 'Phoenix', born: '1982', ops: '.832'},{name: 'Hank Leiber', position: 'CF', team: 'AZ', home: 'Phoenix', born: '1911', ops: '.813'},{name: 'Chris Duncan', position: 'RF', team: 'AZ', home: 'Tucson', born: '1981', ops: '.806'}]},
   {map_id: 5, id: 'AR', name: 'Arkansas', nickname: 'Mockingbirds'},
   {map_id: 6, id: 'CA', name: 'California', nickname: 'Valley Quails', parkImage: '/images/parks/ca.png', players: [
     {name: 'Ernie Lombardi', position: 'C', team: 'CA', home: 'Oakland', born: '1908', ops: '.817'},
