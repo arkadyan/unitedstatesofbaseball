@@ -17,6 +17,8 @@
     <%= javascript_include_tag  "vendor/ember-data-1.0.0-beta-7" %>
     <%= javascript_include_tag  "vendor/localstorage_adapter" %>
 
+    <%= javascript_include_tag "state_map" %>
+
     <%= javascript_include_tag  "app" %>
     <%= javascript_include_tag  "router" %>
     <%= javascript_include_tag  "models" %>
@@ -25,6 +27,10 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
+
+    <div class="container-fluid">
+      <%= yield %>
+    </div>
+
   </body>
 </html>
