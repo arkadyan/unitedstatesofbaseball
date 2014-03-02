@@ -59,8 +59,6 @@ var StateMap = {
         centered = null;
       }
 
-      $('#map_id').html(d.id);
-
       g.selectAll("path")
           .classed("active", centered && function(d) { return d === centered; });
 
