@@ -1,4 +1,4 @@
-App.TodosController = Ember.ObjectController.extend({
+App.TeamController = Ember.ObjectController.extend({
   // hasPlayers: function() {
   //   return this.store.find('person').length > 0;
   // },

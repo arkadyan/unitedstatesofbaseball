@@ -1,4 +1,4 @@
 /*global App, Ember */
 
-App.TodoController = Ember.ObjectController.extend({
+App.PlayerController = Ember.ObjectController.extend({
 });
