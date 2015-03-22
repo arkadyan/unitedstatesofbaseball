@@ -1,7 +1,9 @@
 <ul>
   {{#each speaker in model}}
     <li>
-      {{link-to speaker.name 'speakers.show' speaker}}
+      {{~#link-to 'speakers.show' speaker}}
+        {{speaker.name}} ({{speaker.presentations.length}})
+      {{~/link-to}}
     </li>
   {{/each}}
 </ul>
