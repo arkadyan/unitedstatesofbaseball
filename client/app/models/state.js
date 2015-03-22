@@ -5,19 +5,21 @@ var State = DS.Model.extend({
   name: DS.attr('string')
 });
 
-State.FIXTURES = [
- {
-   code: 'NY',
-   name: 'New York'
- },
- {
-   code: 'MA',
-   name: 'Massachusetts'
- },
- {
-   code: 'ME',
-   name: 'Maine'
- }
-];
+State.reopenClass({
+  FIXTURES: [
+   {
+     code: 'NY',
+     name: 'New York'
+   },
+   {
+     code: 'MA',
+     name: 'Massachusetts'
+   },
+   {
+     code: 'ME',
+     name: 'Maine'
+   }
+  ]
+});
 
 export default State;

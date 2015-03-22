@@ -6,13 +6,15 @@ var Player = DS.Model.extend({
   // team: DS.belongsTo('team')
 });
 
-Player.FIXTURES = [
-  {
-    id: 501,
-    name: 'John Doe',
-    position: '1B',
-    team: 'ME'
-  }
-];
+Player.reopenClass({
+  FIXTURES: [
+    {
+      id: 501,
+      name: 'John Doe',
+      position: '1B',
+      team: 'ME'
+    }
+  ]
+});
 
 export default Player;
