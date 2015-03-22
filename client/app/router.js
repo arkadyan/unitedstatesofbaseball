@@ -7,16 +7,10 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.resource('teams', { path: '/' }, function() {
-    this.resource('team', { path: '/:team_id' });
+    this.route('show', { path: ':team_id' });
     // this.resource('team', { path: '/:state_code' });
   });
 });
-
-// Route.StateRoute = Ember.Route.extend({
-//   model: function() {
-//     return this.store.find('state');
-//   }
-// });
 
 // Route.TeamRoute = Ember.Route.extend({
 //   model: function() {
