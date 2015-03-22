@@ -12,13 +12,13 @@ Router.map(function() {
   });
 });
 
-// App.StatesRoute = Ember.Route.extend({
-//   // model: function() {
-//   //   return this.store.find('state');
-//   // }
+// Route.StateRoute = Ember.Route.extend({
+//   model: function() {
+//     return this.store.find('state');
+//   }
 // });
 
-// App.TeamRoute = Ember.Route.extend({
+// Route.TeamRoute = Ember.Route.extend({
 //   model: function() {
 //     return this.store.find('team', { code: params.state_code });
 //   }
