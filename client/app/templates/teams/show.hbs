@@ -1,0 +1,29 @@
+<h2>The {{name}} {{nickname}}</h2>
+
+{{#if parkImage}}
+  <img {{bind-attr src=parkImage}} id="park-image">
+{{/if}}
+
+<div class="players">
+  <h3>Players:</h3><br>
+  <dl>
+    {{#each player in players}}
+      <div class="player">
+        <dt>{{player.position}})</dt>
+        <dd>
+          <strong>{{player.name}}</strong><br>
+          Hometown: {{player.home}}<br>
+          Born: {{player.born}}<br>
+          OPS: {{player.ops}}
+        </dd>
+      </div>
+    {{/each}}
+  </dl>
+</div>
+
+<!-- <script type="text/x-handlebars" data-template-name="dump">
+{{#if hasPlayers}}
+{{else}}
+  <p>No team members found</p>
+{{/if}}
+</script> -->
