@@ -1,4 +1,6 @@
-App.TeamController = Ember.ObjectController.extend({
+import Ember from 'ember';
+
+export default Ember.ObjectController.extend({
   // hasPlayers: function() {
   //   return this.store.find('person').length > 0;
   // },
