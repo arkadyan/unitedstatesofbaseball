@@ -45,7 +45,7 @@ var StateMap = {
 
     function clicked(d) {
       var x, y, k;
-      var rootPath = '/#/';
+      var rootPath = '/';
 
       if (d && centered !== d) {
         var centroid = path.centroid(d);
