@@ -6,10 +6,22 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('about');
-  this.resource('speakers', function() {
-    this.route('show', { path: ':speaker_id' });
+  this.resource('teams', { path: '/' }, function() {
+    this.resource('team', { path: '/:team_id' });
+    // this.resource('team', { path: '/:state_code' });
   });
 });
+
+// App.StatesRoute = Ember.Route.extend({
+//   // model: function() {
+//   //   return this.store.find('state');
+//   // }
+// });
+
+// App.TeamRoute = Ember.Route.extend({
+//   model: function() {
+//     return this.store.find('team', { code: params.state_code });
+//   }
+// });
 
 export default Router;
