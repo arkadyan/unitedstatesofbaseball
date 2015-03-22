@@ -1,11 +1,11 @@
-/*global App, DS */
+import DS from 'ember-data';
 
-App.Team = DS.Model.extend({
+var State = DS.Model.extend({
   code: DS.attr('string'),
   name: DS.attr('string')
 });
 
-App.Team.FIXTURES = [
+State.FIXTURES = [
  {
    code: 'NY',
    name: 'New York'
@@ -19,3 +19,5 @@ App.Team.FIXTURES = [
    name: 'Maine'
  }
 ];
+
+export default State;

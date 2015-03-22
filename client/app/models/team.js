@@ -1,6 +1,6 @@
-/*global App, DS */
+import DS from 'ember-data';
 
-App.Team = DS.Model.extend({
+var Team = DS.Model.extend({
   code: DS.attr('string'),
   name: DS.attr('string'),
   nickname: DS.attr('string'),
@@ -9,7 +9,7 @@ App.Team = DS.Model.extend({
   players: DS.attr()
 });
 
-App.Team.FIXTURES = [
+Team.FIXTURES = [
   {map_id: 1, id: 'AL', name: 'Alabama', nickname: 'Yellowhammers'},
   {map_id: 2, id: 'AK', name: 'Alaska', nickname: 'Willow Ptarmigans'},
   {map_id: 4, id: 'AZ', name: 'Arizona', nickname: 'Cactus Wrens', parkImage: '/images/parks/az.png', players: [{name: 'Doug Mirabelli', position: 'C', team: 'AZ', home: 'Kingman', born: '1970', ops: '.723'}, {name: 'Brian Banks', position: '1B', team: 'AZ', home: 'Mesa', born: '1970', ops: '.703'},{name: 'Ian Kinsler', position: '2B', team: 'AZ', home: 'Tucson', born: '1982', ops: '.802'},{name: 'Shea Hillenbrand', position: '3B', team: 'AZ', home: 'Mesa', born: '1975', ops: '.760'},{name: 'Solly Hemus', position: 'SS', team: 'AZ', home: 'Phoenix', born: '1923', ops: '.797'},{name: 'Andre Ethier', position: 'LF', team: 'AZ', home: 'Phoenix', born: '1982', ops: '.832'},{name: 'Hank Leiber', position: 'CF', team: 'AZ', home: 'Phoenix', born: '1911', ops: '.813'},{name: 'Chris Duncan', position: 'RF', team: 'AZ', home: 'Tucson', born: '1981', ops: '.806'}]},
@@ -97,3 +97,5 @@ App.Team.FIXTURES = [
   {map_id: 55, id: 'WI', name: 'Wisconsin', nickname: 'Robins'},
   {map_id: 56, id: 'WY', name: 'Wyoming', nickname: 'Western Meadowlarks'}
 ];
+
+export default Team;
